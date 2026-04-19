@@ -13,7 +13,7 @@ $mensagens = [
 
 include_once 'header.php';
 ?>
-<link rel='stylesheet' href="relatorio.css">
+<link rel='stylesheet' href="relatorio.css?v=2">
 <h1>Relatório de Estoque</h1>
 
 <?php if ($status && isset($mensagens[$status])): ?>
@@ -24,15 +24,16 @@ include_once 'header.php';
 
 <table width="100%" cellpadding="10";>
     <tr>
-        <th>ID</th><th>Nome</th><th>Preço</th><th>Ações</th>
+        <th>ID</th><th>Nome</th><th>Preço</th><th>Quantidade</th><th>Ações</th>
     </tr>
     <?php foreach($produtos as $p): ?>
     <tr>
         <td><?= $p['id'] ?></td>
         <td><?= htmlspecialchars($p['nome']) ?></td>
         <td>R$ <?= number_format($p['preco'], 2, ',', '.') ?></td>
+        <td><?= $p['quantidade'] ?></td>
         <td>
-            <a href="altera.php?id=<?= $p['id'] ?>">Editar</a> |
+            <button><a href="altera.php?id=<?= $p['id'] ?>">Editar</a></button>
             <form action="exclui.php" method="POST" style="display:inline" onsubmit="return confirm('Excluir?')">
                 <button type="submit" name="id" value="<?= $p['id'] ?>">Excluir</button>
             </form>

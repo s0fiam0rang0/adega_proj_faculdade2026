@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel='stylesheet' href="header.css">
+    <link rel='stylesheet' href="header.css?=v2">
     <title>Sistema de Produtos</title>
 </head>
 <body>
