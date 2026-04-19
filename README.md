@@ -1,5 +1,5 @@
-# BackEnd_2026
+# Adega UniNine
 
-## Estrutura para as aulas de Programação Back-End - 2026-1
+## Projeto de sistema de estoque para uma adega - 2026-1
 
-### Prof. Hebert - hebert@uni9.pro.br
+### Projeto em andamento...
