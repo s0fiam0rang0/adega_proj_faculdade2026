@@ -1,5 +1,5 @@
 <?php
-$host = 'db'; $db = 'app_db'; $user = 'app_user'; $pass = 'app_pass';
+$host = 'localhost'; $db = 'app_db'; $user = 'root'; $pass = '';
 $dsn = "mysql:host=$host;dbname=$db;charset=utf8mb4";
 
 try {
