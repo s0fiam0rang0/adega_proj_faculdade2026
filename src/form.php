@@ -8,7 +8,7 @@
 <body>
     <img src="img_adega.jpeg">
     <h1>Adega UniNine</h1>
-    <form method="post" action="recebe.php">
+    <form method="post" action="relatorio.php">
     <input type="text" id="login" name="login" placeholder="Nome" required><br><br>
     <input type="password" id="senha" name="senha" placeholder="Senha" required><br><br>
     <div class="entrar"><input type="submit" value="Entrar"></div>
