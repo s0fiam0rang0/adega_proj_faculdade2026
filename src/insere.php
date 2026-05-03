@@ -21,4 +21,5 @@ include_once 'header.php';
     <input type="number" name="quantidade" placeholder="Quantidade" required><br><br>
     <div class= 'salvar'><button type="submit">Salvar</button></div>
 </form>
+
 <?php include_once 'footer.php'; ?>
