@@ -2,12 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel='stylesheet' href="header.css?=v2">
+    <link rel='stylesheet' href="header.css">
     <title>Sistema de Produtos</title>
 </head>
 <body>
 <nav>
     <a href="relatorio.php">Relatório</a>
     <a href="insere.php">Novo Produto</a>
+    <a href="logout.php" style="background: rgb(245, 192, 255); color:white; padding:12px; border-radius:11px; text-decoration:none; margin-left:auto;">Sair</a>
 </nav>
 <div class="container">

@@ -5,7 +5,7 @@ $produtos = $pdo->query("SELECT * FROM produtos ORDER BY nome")->fetchAll();
 // Sistema de Mensagens
 $status = $_GET['msg'] ?? '';
 $mensagens = [
-    'sucesso' => 'Ação realizada com sucesso!',
+    'sucesso' => 'Produto cadastrado com sucesso!',
     'excluido' => 'Produto removido do sistema.',
     'erro' => 'Erro ao processar solicitação.',
     'tabela_pronta' => 'Banco de dados configurado!'

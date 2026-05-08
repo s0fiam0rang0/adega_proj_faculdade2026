@@ -3,10 +3,11 @@ body {
     margin: 0; 
     background: #ffffff; 
 }
-        
-
+    
 nav { 
-    background:PURPLE; 
+    display: flex;
+    align-items: center;
+    background: PURPLE; 
     padding: 15px; 
     color: white; 
 }
@@ -17,13 +18,13 @@ nav a {
     margin-right: 20px; 
     font-weight: bold; 
     transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
-nav :hover {
+nav a:hover {
     background: rgb(201, 77, 201);
-    padding: 15px;
 }
-
 
 .container { 
     background: linear-gradient(rgb(255, 255, 255), rgb(245, 192, 255)); 
