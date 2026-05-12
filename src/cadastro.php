@@ -12,7 +12,7 @@
     }
 }
 ?>
-<h2>Cadastro funcionario</h2>
+<h2>Cadastrar Funcionário</h2>
 <form method="POST">
     <input type="text" name="EMAIL" placeholder="EMAIL" required><br><br>
     <input type="password" name="SENHA" placeholder="SENHA" required><br><br>
