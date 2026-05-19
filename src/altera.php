@@ -13,15 +13,20 @@ $stmt = $pdo->prepare("SELECT * FROM produtos WHERE id = ?");
 $stmt->execute([$id]);
 $p = $stmt->fetch();
 
+if (!$p) {
+    header("Location: relatorio.php");
+    exit;
+}
+
 include_once 'header.php';
 ?>
-<link rel="stylesheet" href="altera.css?v=2">
+<link rel="stylesheet" href="altera.css?v=3">
 <h2>Alterar Produto</h2>
 <form method="POST">
     <input type="hidden" name="id" value="<?= $p['id'] ?>">
     <input type="text" name="nome" value="<?= $p['nome'] ?>" required><br><br>
     <input type="number" step="0.01" name="preco" value="<?= $p['preco'] ?>" required><br><br>
     <input type="number" name="quantidade" value="<?= $p['quantidade'] ?>" required><br><br>
-    <div class=atualizar><button type="submit">Atualizar</button></div>
+    <div class="atualizar"><button type="submit">Atualizar</button></div>
 </form>
 <?php include_once 'footer.php'; ?>
