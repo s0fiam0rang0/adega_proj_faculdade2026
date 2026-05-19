@@ -13,8 +13,11 @@ body h1 {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 13.5%;
-    left: 42.7%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
 }
 
 body img {
@@ -75,4 +78,22 @@ form input {
     padding-left: 20px;
     padding-right: 20px;
     left: 20%;
+}
+
+.cadastro-link {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.cadastro-link a {
+    color: purple;
+    font-size: 0.85rem;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.2s;
+}
+
+.cadastro-link a:hover {
+    color: rgb(212, 71, 212);
+    text-decoration: underline;
 }
