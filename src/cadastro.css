@@ -1,0 +1,61 @@
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    background: linear-gradient(to bottom right, purple, rgb(228, 137, 228));
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+body {
+    background-color: rgb(223, 143, 223);
+}
+
+form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: white;
+    padding: 40px;
+    padding-right: 70px;
+    border-radius: 25px;
+    max-width: 400px;
+    margin: 30px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+form input {
+    width: 100%;
+    border: none;
+    outline: 2px solid rgb(161, 161, 161);
+    background-color: rgb(247, 247, 247);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 12px;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    outline: 2px solid purple;
+}
+
+.salvar {
+    margin-top: 20px;
+}
+
+.salvar button {
+    border: none;
+    outline: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgb(173, 1, 173);
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.salvar button:hover {
+    background-color: rgb(212, 71, 212);
+    transform: scale(1.05);
+}
